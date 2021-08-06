@@ -1,8 +1,8 @@
 <template>
   <base-container title="Vuex">
     <the-counter></the-counter>
-    <button @click="addOne">
-      Add 1
+    <button @click="addTen">
+      Add Ten
     </button>
     <change-counter></change-counter>
   </base-container>
@@ -21,9 +21,14 @@ export default {
   },
 
   methods: {
-    addOne() {
+    addTen() {
       // this.$store.state.counter = this.$store.state.counter + 11;
-      this.$store.commit('increment');
+      // this.$store.commit('increase', { value: 10 });
+      // alternative way
+      this.$store.commit({
+        type: 'increase',
+        value: 10
+      });
     }
   }
 };
