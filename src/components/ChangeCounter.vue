@@ -11,7 +11,7 @@ export default {
   methods: {
     addTwo() {
       //   this.$store.state.counter = this.$store.state.counter + 1;
-      this.$store.dispatch('a/increment');
+      this.$store.dispatch('a/ increment');
     }
     // mapActions argument as an array
     // ...mapActions(['increment', 'increase'])
